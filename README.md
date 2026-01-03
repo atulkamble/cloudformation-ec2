@@ -36,5 +36,5 @@ aws cloudformation create-stack \
 ```
 OR
 ```
-aws cloudformation create-stack --stack-name MyStack --template-body file://template.yaml
+aws cloudformation create-stack --stack-name myEC2 --template-body file://template.yaml
 ```
