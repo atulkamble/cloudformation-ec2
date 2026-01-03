@@ -38,3 +38,8 @@ OR
 ```
 aws cloudformation create-stack --stack-name myEC2 --template-body file://template.yaml
 ```
+# Delete Stack
+```
+aws cloudformation delete-stack \
+  --stack-name myEC2
+```
