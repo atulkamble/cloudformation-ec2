@@ -31,7 +31,7 @@ aws cloudformation validate-template --template-body file://template.yaml
 # Create Stack
 ```
 aws cloudformation create-stack \
-  --stack-name MyStack \
+  --stack-name myEC2 \
   --template-body file://template.yaml 
 ```
 OR
