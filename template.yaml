@@ -14,6 +14,5 @@ Resources:
       InstanceType: t3.micro
       ImageId: ami-0c230065b91270bc6
       KeyName: mykey
-      SecurityGroupIds:
-        - sg-02f72ff6dbca76714
+      SecurityGroupIds: sg-02f72ff6dbca76714
       SubnetId: subnet-0f135e475d49526d6
