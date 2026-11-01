@@ -1,8 +1,19 @@
----
+AWSTemplateFormatVersion: "2010-09-09"
+Description: EC2 Instance
+
 Resources:
-  MyInstance:
+  KeyPair:
+    Type: AWS::EC2::KeyPair
+    Properties:
+      KeyName: mykey
+      KeyType: rsa
+
+  MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      AvailabilityZone: us-east-1a
-      ImageId: ami-0152204c1a187337c
       InstanceType: t3.micro
+      ImageId: ami-0c230065b91270bc6
+      KeyName: mykey
+      SecurityGroupIds:
+        - sg-02f72ff6dbca76714
+      SubnetId: subnet-0f135e475d49526d6
